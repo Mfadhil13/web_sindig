@@ -259,7 +259,7 @@ a:focus {
 }
 
 .dropcap.primary {
-  background-image: linear-gradient(45deg, #00C896 ,#00C896 ,#28DF89) ;
+  background-image: linear-gradient(45deg, #00C896 ,#00C896 ,#deff72) ;
   color: #fff;
 }
 
@@ -498,6 +498,7 @@ a[href^=tel] {
 }
 
 .btn-primary,
+.btn-custom,
 .btn-dark {
   border: 0;
   border-radius: 3px;
@@ -512,6 +513,7 @@ a[href^=tel] {
 
 @media (max-width: 767px) {
   .btn-primary,
+  .btn-custom,
   .btn-dark {
     font-size: 13px;
   }
@@ -523,7 +525,15 @@ a[href^=tel] {
 }
 
 .btn-primary {
-  background-image: linear-gradient(45deg, #00C896 ,#00C896 ,#28DF89) ;
+  background: #007bff;
+}
+
+.btn-white.btn-custom {
+  background-image: linear-gradient(45deg, #00C896 ,#00C896 ,#cafd22) ;
+}
+
+.btn-custom {
+  background-image: linear-gradient(45deg, #00C896 ,#00C896 ,#cafd22) ;
 }
 
 .btn-dark {
