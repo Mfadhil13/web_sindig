@@ -138,12 +138,13 @@ jQuery(function ($) {
 		// banner Carousel Two
 		function bannerCarouselTwo() {
 			$('.banner-carousel.banner-carousel-2').slick({
-				fade: true,
+				fade: false,
 				slidesToShow: 1,
 				slidesToScroll: 1,
 				autoplay: true,
+				infinite: true,
 				dots: false,
-				speed: 600,
+				speed: 300,
 				arrows: true,
 				prevArrow: '<button type="button" class="carousel-control left" aria-label="carousel-control"><i class="fas fa-chevron-left"></i></button>',
 				nextArrow: '<button type="button" class="carousel-control right" aria-label="carousel-control"><i class="fas fa-chevron-right"></i></button>'
@@ -258,6 +259,21 @@ jQuery(function ($) {
 			});
 		}
 		mediaPopup();
+
+
+		function customSlide() {
+			$('.custom-slide').slick({
+				slidesToShow: 10,
+				slidesToScroll: 1,
+				infinite: true,
+				autoplay: true,
+				
+				dots: false,
+				speed: 600,
+				arrows: false
+			});
+		}
+		customSlide();
 
 	});
 
